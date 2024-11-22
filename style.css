@@ -61,7 +61,9 @@ html{
     .logD{content: url("https://static.wixstatic.com/media/2397a0_2aa6cf8d71d844e6b19ae42c93669839~mv2.png")}
 }
 
-
+/**/
+/**/
+/**/
 /*RESPONSIVE ET POINTS DE RUPTURE*/
 
 @media only screen and (min-width: 35rem) {  /*48rem ????*/
@@ -74,8 +76,14 @@ html{
 }
 
 
+/**/
+/**/
+/**/
+/*GENERAL*/
+
 body{
     font-family: sans-serif ;
+    background-color: var(--fond);
 }
 
 .logo{
@@ -94,7 +102,14 @@ body{
 }
 
 
+/**/
+/**/
+/*TETE*/
+.profile{margin:2rem; max-width: 80%;}
 
+
+/**/
+/**/
 /*YOUTUBE*/
 
 .ChaineYT{font-weight: 600;}
@@ -115,6 +130,9 @@ body{
 .abos{margin-top: -0.5rem}
 
 
+
+/**/
+/**/
 /*NEWSLETTER*/
 
 .news{
@@ -157,6 +175,11 @@ input{opacity: 30%}
     border-radius: 12px;
     padding:8px;
 }
+
+
+
+
+
 
 
 
