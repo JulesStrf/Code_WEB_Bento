@@ -3,10 +3,9 @@ html{
 }
 
 
-root{
+:root{
 
     /*  COULEURS    */
-
     --fond-l : #E9ECEF;
     --fond-d : #32363A;
 
@@ -56,23 +55,123 @@ root{
 
 }
 
+/*Pour que le logo change de couleur en fonction du mode (deux sources différentes)*/
+@media (prefers-color-scheme: dark) {
+    .logS{content: url("https://static.wixstatic.com/media/2397a0_3f9cc99f74f74538af70b461953bae92~mv2.png")}
+    .logD{content: url("https://static.wixstatic.com/media/2397a0_2aa6cf8d71d844e6b19ae42c93669839~mv2.png")}
+}
 
+
+/*RESPONSIVE ET POINTS DE RUPTURE*/
+
+@media only screen and (min-width: 35rem) {  /*48rem ????*/
+    /* tablettes et ordinateurs */
+}
+
+@media only screen and (max-width: 34.9rem) {
+    /* téléphone */
+    .disparait{display : none }
+}
+
+
+body{
+    font-family: sans-serif ;
+}
 
 .logo{
     max-width: 48px;
-    height: auto;
+    height: 100%;
+    padding : 0.3rem;
 }
+
+.flux> article{
+    margin-left : 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+
+
+/*YOUTUBE*/
+
+.ChaineYT{font-weight: 600;}
 
 .YoutTitre{
     display : flex;
     flex-direction: row;
+    align-items: center;
 }
-
 
 .youtube{
     background-color: var(--youtube-fond);
     display : flex;
     flex-direction: column;
+    color : white;
+}
 
+.abos{margin-top: -0.5rem}
+
+
+/*NEWSLETTER*/
+
+.news{
+    background-color: white;
+    margin-left : 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    color : var(--newsletter-items);
+    background-color: var(--newsletter-fond);
+}
+
+h3{margin-block-start: 0em;}
+
+.mail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border : 1px solid #D5E0EA;
+    border-radius: 8px;
+    padding:8px;
+    
+}
+
+.mail>*{margin : 0.3rem}
+
+.zoneTEXTE{
+    background-color: var(--newsletter-fond);
+    border : 0px solid #D5E0EA;
+    width: 100%;
+}
+
+input{opacity: 30%}
+
+.ButtGo{
+    background-color: var(--newsletter-items);
+    color : var(--newsletter-fond);
+    border-radius: 12px;
+    padding:8px;
+}
+
+
+
+
+
+
+
+/*J'ai fais ça le temps d'encoder ma partie (pour pas être dérangée par le reste)*/
+/*mais il faudra le supprimer apres */
+
+.Spotify{
+    background-color: green;
+}
+
+.Deezer{
+    background-color: green;
 }
 

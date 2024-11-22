@@ -29,32 +29,91 @@
         </article>
 
         <article class="Spotify">
-            <img class="logo" src="#" alt="logo Spotify">
+            <img class="logo logS" src="https://static.wixstatic.com/media/2397a0_6be8d79af7a443028bbc72ac7d99ec63~mv2.png " alt="logo Spotify">
             <h2>Spotify</h2>
             <button class="listen2">Listen</button>
         </article>
 
         <article class="Deezer">
-            <img class= "logo" src="#" alt="logo Deezer">
+            <img class= "logo logD" src="https://static.wixstatic.com/media/2397a0_26086a46c8df4a9bb14baf02cc18fa10~mv2.png" alt="logo Deezer">
             <h2>Deezer</h2>
             <button class="listen2">Listen</button>
         </article>
 
         <article class="youtube">
             <div class="YoutTitre">
-                <img class="logo" src="https://th.bing.com/th/id/R.deb493608dae9e533ef6b6894095b797?rik=I3aNhE4yULCLxA&pid=ImgRaw&r=0" alt="logo Youtube">
+                <img class="logo logYT" src="https://static.wixstatic.com/media/2397a0_f5f5a44f594a4fd98c7ce18f36e645e7~mv2.jpg" alt="logo Youtube">
                 <h2>Youtube</h2>
             </div>
-            <p class="ChaineYT">@aznavourofficial</p>
-            <p class="abos">11,8k abonnés</p>
+
+            <div class="disparait">
+                <p class="ChaineYT">@aznavourofficial</p>
+                <p class="abos">11,8k abonnés</p>
+            </div>
+
         </article>
 
     </section>
 
     <section class="news">
         <h3>Subscribe to my monthly newletter</h3>
-
+        <artcicle class="mail">
+            <p>@</p>
+            <input class="zoneTEXTE" name="AdresseMail" value="me@site.com" type="text"/>
+            <a href="#"><button class="ButtGo">Go!</button></a>
+        </artcicle>
     </section>
 
+    <script>console.log(document.querySelector(".zoneTEXTE").value)</script>
+
 </body>
+
+<!-- CODE EN JS POUR LES INTERACTIONS-->
+
+<script>
+
+    document.querySelector("input").addEventListener("mousemove",change)
+
+    function change(){
+        if (document.querySelector("input").value == "me@site.com"){
+            document.querySelector("input").style.opacity = 0.3
+        }else{
+            document.querySelector("input").style.opacity = 1
+        }
+
+        if (document.querySelector("input").value == ""){
+            document.querySelector("input").value = "me@site.com";
+            document.querySelector("input").blur()}
+    }
+
+    //let LogoDeezer= document.querySelector(".logD").src
+    //console.log(LogoDeezer)
+
+
+
+
+</script>
+
+
 </html>
+
+
+
+
+
+<!--
+LOGO DEEZER BLANC
+https://static.wixstatic.com/media/2397a0_26086a46c8df4a9bb14baf02cc18fa10~mv2.png
+
+LOGO DEEZER VIOLET
+https://static.wixstatic.com/media/2397a0_2aa6cf8d71d844e6b19ae42c93669839~mv2.png
+
+LOGO SPOTIFY BLANC
+https://static.wixstatic.com/media/2397a0_6be8d79af7a443028bbc72ac7d99ec63~mv2.png
+
+LOGO SPOTIFY FONCE
+https://static.wixstatic.com/media/2397a0_3f9cc99f74f74538af70b461953bae92~mv2.png
+
+LOGO YOUTUBE BLANC
+https://static.wixstatic.com/media/2397a0_f5f5a44f594a4fd98c7ce18f36e645e7~mv2.jpg
+-->
